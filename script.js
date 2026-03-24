@@ -55,6 +55,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeEls.forEach(el => observer.observe(el));
 
+  /* ---------- SERVICES CAROUSEL ---------- */
+  const track = document.querySelector('.services-track');
+  const prevBtn = document.querySelector('.carousel-prev');
+  const nextBtn = document.querySelector('.carousel-next');
+  const dotsContainer = document.querySelector('.carousel-dots');
+
+  if (track && prevBtn && nextBtn && dotsContainer) {
+    const cards = Array.from(track.querySelectorAll('.service-card'));
+
+    // Build dots
+    cards.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Serviço ${i + 1}`);
+      dot.setAttribute('role', 'tab');
+      dot.addEventListener('click', () => scrollToCard(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll('.carousel-dot');
+
+    function getCardWidth() {
+      return cards[0].getBoundingClientRect().width + 24; // 24 = gap
+    }
+
+    function scrollToCard(index) {
+      track.scrollTo({ left: index * getCardWidth(), behavior: 'smooth' });
+    }
+
+    function updateState() {
+      const active = Math.round(track.scrollLeft / getCardWidth());
+      dots.forEach((d, i) => d.classList.toggle('active', i === active));
+      prevBtn.disabled = active === 0;
+      nextBtn.disabled = active >= cards.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      const current = Math.round(track.scrollLeft / getCardWidth());
+      scrollToCard(Math.max(0, current - 1));
+    });
+
+    nextBtn.addEventListener('click', () => {
+      const current = Math.round(track.scrollLeft / getCardWidth());
+      scrollToCard(Math.min(cards.length - 1, current + 1));
+    });
+
+    track.addEventListener('scroll', updateState, { passive: true });
+    updateState();
+  }
+
   /* ---------- ACTIVE NAV LINK ---------- */
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav a[href^="#"], .mobile-menu a[href^="#"]');

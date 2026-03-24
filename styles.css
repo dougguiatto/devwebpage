@@ -433,15 +433,73 @@ section { padding: 96px 0; }
 }
 .cred-label { font-size: 13px; color: var(--gray-text); font-weight: 500; line-height: 1.4; }
 
-/* ---------- SERVICES ---------- */
+/* ---------- SERVICES CAROUSEL ---------- */
 .services { background: var(--white); }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+.services-carousel {
+  position: relative;
+  padding: 0 48px;
 }
+
+.services-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 8px;
+}
+.services-track::-webkit-scrollbar { display: none; }
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(calc(-50% - 20px));
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1.5px solid var(--gray-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  z-index: 2;
+}
+.carousel-btn:hover { border-color: var(--orange); color: var(--orange); box-shadow: var(--shadow-md); }
+.carousel-btn:disabled { opacity: 0.25; cursor: default; pointer-events: none; }
+.carousel-prev { left: 0; }
+.carousel-next { right: 0; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gray-mid);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition);
+}
+.carousel-dot.active {
+  background: var(--orange);
+  width: 24px;
+  border-radius: 4px;
+}
+
 .service-card {
+  flex: 0 0 calc(33.333% - 16px);
+  scroll-snap-align: start;
   background: var(--white);
   border: 1.5px solid var(--gray-mid);
   border-radius: var(--radius-lg);
@@ -869,7 +927,8 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   .hero-trust { justify-content: center; }
   .hero-visual { order: -1; max-width: 380px; margin: 0 auto; }
   .credibility-grid { grid-template-columns: repeat(2, 1fr); }
-  .services-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .services-carousel { padding: 0 36px; }
+  .service-card { flex: 0 0 calc(50% - 12px); }
   .about-inner { grid-template-columns: 1fr; }
   .about-visual { display: none; }
   .contact-inner { grid-template-columns: 1fr; }
@@ -886,6 +945,8 @@ textarea.form-control { resize: vertical; min-height: 110px; }
 }
 
 @media (max-width: 480px) {
+  .services-carousel { padding: 0 28px; }
+  .service-card { flex: 0 0 calc(85% - 12px); }
   .credibility-grid { grid-template-columns: 1fr; }
   .diff-grid { grid-template-columns: 1fr; }
   .hero { padding-top: 120px; padding-bottom: 72px; }
