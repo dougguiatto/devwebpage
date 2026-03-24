@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/dougguiatto/.claude/skills/ui-ux/**)",
+      "Bash(python3 /Users/dougguiatto/.claude/skills/ui-ux/scripts/search.py 'tech consulting LIMS laboratory SaaS modern minimal' --design-system -p DEV4LAB -f markdown)",
+      "Bash(python3:*)"
+    ]
+  }
+}

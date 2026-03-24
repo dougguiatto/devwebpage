@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DEV4LAB — Especialistas em implementação, desenvolvimento e evolução do myLIMS. Soluções ágeis para laboratórios." />
+  <meta name="theme-color" content="#1D1A3B" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="DEV4LAB — Especialistas em myLIMS" />
+  <meta property="og:description" content="Implementação, relatórios e gestão de projetos para o seu laboratório. Entregas ágeis com especialistas certificados." />
+  <meta property="og:image"       content="DEV4LAB_PR.png" />
+  <meta property="og:locale"      content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="DEV4LAB — Especialistas em myLIMS" />
+  <meta name="twitter:description" content="Implementação, relatórios e gestão de projetos para o seu laboratório." />
+  <meta name="twitter:image"       content="DEV4LAB_PR.png" />
+
+  <title>DEV4LAB — Especialistas em myLIMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Skip to main content (keyboard/screen reader users) -->
+<a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+<!-- ==============================
+     HEADER
+============================== -->
+<header class="header" role="banner">
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a href="#inicio" class="logo" aria-label="DEV4LAB — Página inicial">
+      <!--<div class="logo-icon" aria-hidden="true">
+        ADICONAR O .ICON AQUI
+      </div> -->
+      <img src="DEV4LAB_PR.png" alt="DEV4LAB" class="logo-img">
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio">Home</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Header CTA -->
+    <div class="header-cta">
+      <a
+        href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20DEV4LAB."
+        class="btn btn-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fale conosco pelo WhatsApp"
+      >
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" aria-label="Menu mobile">
+    <a href="#inicio">Home</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+    <a
+      href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20DEV4LAB."
+      class="btn btn-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Falar no WhatsApp
+    </a>
+  </nav>
+</header>
+
+
+<!-- ==============================
+     HERO
+============================== -->
+<main id="main-content">
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="container hero-inner">
+
+    <!-- Left: Text -->
+    <div class="hero-content">
+      <div class="hero-badge" aria-label="Especialistas em myLIMS">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Especialistas em myLIMS
+      </div>
+
+      <h1 id="hero-title">
+        Transformamos a complexidade do seu LIMS em
+        <em>soluções ágeis e eficientes</em>
+      </h1>
+
+      <p class="hero-desc">
+        Na DEV4LAB, aceleramos sua operação com soluções sob medida, garantindo
+        eficiência, qualidade e entregas rápidas para laboratórios que exigem o melhor.
+      </p>
+
+      <div class="hero-actions">
+        <a
+          href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20DEV4LAB."
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Fale conosco
+        </a>
+        <a href="#servicos" class="btn btn-secondary">
+          Conheça nossos serviços
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-trust" role="list" aria-label="Diferenciais">
+        <div class="hero-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Implementação rápida
+        </div>
+        <div class="hero-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          +15 anos de experiência
+        </div>
+        <div class="hero-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Especialistas certificados
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Illustration -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual-inner">
+        <svg viewBox="0 0 480 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de laboratório e tecnologia">
+          <!-- Background circle glow -->
+          <circle cx="240" cy="220" r="200" fill="url(#heroGrad1)" opacity="0.06"/>
+          <circle cx="240" cy="220" r="150" fill="url(#heroGrad2)" opacity="0.05"/>
+
+          <!-- Orbit ring -->
+          <circle cx="240" cy="220" r="168" stroke="#1D1A3B" stroke-width="1" stroke-dasharray="6 8" opacity="0.12"/>
+
+          <!-- Central hub -->
+          <circle cx="240" cy="220" r="60" fill="#1D1A3B" opacity="0.06"/>
+          <circle cx="240" cy="220" r="45" fill="#1D1A3B" opacity="0.08"/>
+          <circle cx="240" cy="220" r="32" fill="#1D1A3B"/>
+          <!-- Lab flask icon inside hub -->
+          <path d="M233 208 v10 l-9 18 h22 l-9-18 v-10" fill="#F5A135" opacity="0.9"/>
+          <path d="M233 208 h14" stroke="#F5A135" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="229" cy="229" r="2" fill="white" opacity="0.7"/>
+          <circle cx="235" cy="233" r="1.5" fill="white" opacity="0.5"/>
+
+          <!-- Satellite cards -->
+          <!-- Card 1: top right -->
+          <g transform="translate(340, 80)">
+            <rect x="0" y="0" width="110" height="72" rx="12" fill="white" filter="url(#shadow1)"/>
+            <rect x="0" y="0" width="110" height="72" rx="12" stroke="#F5A135" stroke-width="1.5" opacity="0.3"/>
+            <rect x="14" y="14" width="24" height="24" rx="6" fill="#FFF3E0"/>
+            <path d="M20 26h12M20 22h8" stroke="#F5A135" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="46" y="16" width="50" height="5" rx="2.5" fill="#1D1A3B" opacity="0.12"/>
+            <rect x="46" y="25" width="38" height="4" rx="2" fill="#1D1A3B" opacity="0.07"/>
+            <rect x="14" y="48" width="36" height="4" rx="2" fill="#F5A135" opacity="0.7"/>
+            <rect x="56" y="48" width="24" height="4" rx="2" fill="#1D1A3B" opacity="0.07"/>
+          </g>
+          <!-- Connector line 1 -->
+          <line x1="340" y1="116" x2="282" y2="196" stroke="#F5A135" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.4"/>
+          <circle cx="340" cy="116" r="4" fill="#F5A135" opacity="0.5"/>
+          <circle cx="282" cy="196" r="3" fill="#F5A135" opacity="0.6"/>
+
+          <!-- Card 2: top left -->
+          <g transform="translate(30, 70)">
+            <rect x="0" y="0" width="110" height="72" rx="12" fill="white" filter="url(#shadow1)"/>
+            <rect x="0" y="0" width="110" height="72" rx="12" stroke="#1D1A3B" stroke-width="1" opacity="0.1"/>
+            <rect x="14" y="14" width="24" height="24" rx="6" fill="#E8E7F5"/>
+            <circle cx="26" cy="26" r="7" stroke="#1D1A3B" stroke-width="1.5" opacity="0.6"/>
+            <path d="M26 22v4l3 2" stroke="#1D1A3B" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            <rect x="46" y="16" width="50" height="5" rx="2.5" fill="#1D1A3B" opacity="0.12"/>
+            <rect x="46" y="25" width="34" height="4" rx="2" fill="#1D1A3B" opacity="0.07"/>
+            <!-- Mini chart bars -->
+            <rect x="14" y="48" width="8" height="14" rx="2" fill="#1D1A3B" opacity="0.15" transform="translate(0,-6)"/>
+            <rect x="26" y="48" width="8" height="10" rx="2" fill="#1D1A3B" opacity="0.15" transform="translate(0,-2)"/>
+            <rect x="38" y="48" width="8" height="16" rx="2" fill="#F5A135" opacity="0.7" transform="translate(0,-8)"/>
+            <rect x="50" y="48" width="8" height="12" rx="2" fill="#1D1A3B" opacity="0.12" transform="translate(0,-4)"/>
+          </g>
+          <!-- Connector line 2 -->
+          <line x1="140" y1="106" x2="203" y2="196" stroke="#1D1A3B" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.2"/>
+          <circle cx="140" cy="106" r="4" fill="#1D1A3B" opacity="0.2"/>
+          <circle cx="203" cy="196" r="3" fill="#1D1A3B" opacity="0.3"/>
+
+          <!-- Card 3: right middle -->
+          <g transform="translate(350, 200)">
+            <rect x="0" y="0" width="100" height="80" rx="12" fill="white" filter="url(#shadow1)"/>
+            <rect x="0" y="0" width="100" height="80" rx="12" stroke="#1D1A3B" stroke-width="1" opacity="0.08"/>
+            <text x="14" y="26" fill="#1D1A3B" font-size="10" font-weight="600" opacity="0.5" font-family="Inter, sans-serif">GO-LIVE</text>
+            <!-- Progress ring sketch -->
+            <circle cx="50" cy="52" r="18" stroke="#F2F2F2" stroke-width="4"/>
+            <circle cx="50" cy="52" r="18" stroke="#F5A135" stroke-width="4" stroke-dasharray="75 38" stroke-dashoffset="28" stroke-linecap="round"/>
+            <text x="50" y="57" fill="#1D1A3B" font-size="10" font-weight="700" text-anchor="middle" font-family="Inter, sans-serif">87%</text>
+          </g>
+          <!-- Connector line 3 -->
+          <line x1="350" y1="240" x2="286" y2="230" stroke="#1D1A3B" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.2"/>
+
+          <!-- Card 4: bottom -->
+          <g transform="translate(120, 330)">
+            <rect x="0" y="0" width="240" height="68" rx="12" fill="white" filter="url(#shadow1)"/>
+            <rect x="0" y="0" width="240" height="68" rx="12" stroke="#1D1A3B" stroke-width="1" opacity="0.08"/>
+            <!-- Success check -->
+            <circle cx="34" cy="34" r="16" fill="rgba(37,211,102,0.12)"/>
+            <path d="M27 34l5 5 9-9" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="60" y="22" width="100" height="6" rx="3" fill="#1D1A3B" opacity="0.12"/>
+            <rect x="60" y="34" width="75" height="5" rx="2.5" fill="#1D1A3B" opacity="0.07"/>
+            <rect x="60" y="46" width="55" height="4" rx="2" fill="#25D366" opacity="0.5"/>
+            <rect x="185" y="20" width="40" height="28" rx="8" fill="rgba(245,161,53,0.08)"/>
+            <text x="205" y="40" fill="#F5A135" font-size="11" font-weight="700" text-anchor="middle" font-family="Inter, sans-serif">✓</text>
+          </g>
+          <!-- Connector line 4 -->
+          <line x1="240" y1="330" x2="240" y2="284" stroke="#1D1A3B" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.15"/>
+          <circle cx="240" cy="284" r="3" fill="#1D1A3B" opacity="0.2"/>
+
+          <!-- Card 5: left bottom -->
+          <g transform="translate(20, 240)">
+            <rect x="0" y="0" width="100" height="70" rx="12" fill="white" filter="url(#shadow1)"/>
+            <rect x="0" y="0" width="100" height="70" rx="12" stroke="#1D1A3B" stroke-width="1" opacity="0.08"/>
+            <text x="14" y="22" fill="#1D1A3B" font-size="9" font-weight="600" opacity="0.45" font-family="Inter, sans-serif">POWER BI</text>
+            <!-- Tiny chart -->
+            <rect x="14" y="30" width="10" height="22" rx="2" fill="#F5A135" opacity="0.7"/>
+            <rect x="28" y="36" width="10" height="16" rx="2" fill="#F5A135" opacity="0.4"/>
+            <rect x="42" y="26" width="10" height="26" rx="2" fill="#F5A135" opacity="0.85"/>
+            <rect x="56" y="33" width="10" height="19" rx="2" fill="#F5A135" opacity="0.5"/>
+            <rect x="70" y="29" width="10" height="23" rx="2" fill="#F5A135" opacity="0.65"/>
+          </g>
+          <!-- Connector line 5 -->
+          <line x1="120" y1="275" x2="197" y2="244" stroke="#F5A135" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.3"/>
+          <circle cx="120" cy="275" r="4" fill="#F5A135" opacity="0.35"/>
+
+          <!-- Floating dots -->
+          <circle cx="180" cy="140" r="5" fill="#F5A135" opacity="0.25"/>
+          <circle cx="310" cy="150" r="3.5" fill="#1D1A3B" opacity="0.12"/>
+          <circle cx="160" cy="310" r="4" fill="#F5A135" opacity="0.2"/>
+          <circle cx="330" cy="310" r="3" fill="#1D1A3B" opacity="0.1"/>
+          <circle cx="90" cy="180" r="2.5" fill="#F5A135" opacity="0.3"/>
+
+          <defs>
+            <radialGradient id="heroGrad1" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F5A135"/>
+              <stop offset="100%" stop-color="#F5A135" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="heroGrad2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#1D1A3B"/>
+              <stop offset="100%" stop-color="#1D1A3B" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="shadow1" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#1D1A3B" flood-opacity="0.09"/>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     CREDIBILITY STRIP
+============================== -->
+<section class="credibility" aria-label="Credenciais">
+  <div class="container">
+    <div class="credibility-grid">
+
+      <div class="cred-item fade-up">
+        <div class="cred-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+          </svg>
+        </div>
+        <div>
+          <div class="cred-value"><span data-count="15" data-suffix="+">15+</span></div>
+          <div class="cred-label">Anos de experiência em myLIMS</div>
+        </div>
+      </div>
+
+      <div class="cred-item fade-up delay-1">
+        <div class="cred-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="cred-value">100%</div>
+          <div class="cred-label">Especialistas certificados</div>
+        </div>
+      </div>
+
+      <div class="cred-item fade-up delay-2">
+        <div class="cred-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <div>
+          <div class="cred-value"><span data-count="50" data-suffix="+">50+</span></div>
+          <div class="cred-label">Projetos entregues com agilidade</div>
+        </div>
+      </div>
+
+      <div class="cred-item fade-up delay-3">
+        <div class="cred-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div>
+          <div class="cred-value"><span data-count="30" data-suffix="+">30+</span></div>
+          <div class="cred-label">Clientes satisfeitos no setor laboratorial</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SERVICES
+============================== -->
+<section class="services" id="servicos" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">O que fazemos</div>
+    <h2 class="section-title" id="services-title">Soluções completas para o seu laboratório</h2>
+    <p class="section-subtitle">
+      Combinamos expertise técnica e metodologia ágil para entregar o máximo do myLIMS no menor tempo possível.
+    </p>
+
+    <div class="services-grid">
+
+      <!-- Card 1 -->
+      <article class="service-card fade-up">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>
+            <path d="M7 8h10M7 12h6"/>
+          </svg>
+        </div>
+        <h3>Implementação do myLIMS</h3>
+        <p>Configuramos e implementamos o myLIMS do zero, com foco em velocidade, qualidade e aderência total ao seu processo laboratorial.</p>
+        <ul class="service-features" aria-label="Inclui">
+          <li>Setup e configuração completa</li>
+          <li>Integração com sistemas existentes</li>
+          <li>Go-live rápido e assistido</li>
+          <li>Treinamento da equipe</li>
+        </ul>
+        <a
+          href="https://wa.me/5511999999999?text=Olá!%20Tenho%20interesse%20em%20Implementação%20do%20myLIMS."
+          class="service-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Fale conosco sobre Implementação do myLIMS"
+        >
+          Fale conosco
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="service-card fade-up delay-1">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+            <line x1="2" y1="20" x2="22" y2="20"/>
+          </svg>
+        </div>
+        <h3>Desenvolvimento de Relatórios</h3>
+        <p>Criamos relatórios e dashboards poderosos que transformam dados do myLIMS em inteligência para tomada de decisão.</p>
+        <ul class="service-features" aria-label="Inclui">
+          <li>Power BI integrado ao myLIMS</li>
+          <li>Report Builder personalizado</li>
+          <li>Dashboards interativos</li>
+          <li>KPIs e indicadores laboratoriais</li>
+        </ul>
+        <a
+          href="https://wa.me/5511999999999?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20de%20Relatórios."
+          class="service-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Fale conosco sobre Desenvolvimento de Relatórios"
+        >
+          Fale conosco
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="service-card fade-up delay-2">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <h3>Gestão de Projetos</h3>
+        <p>Gerenciamos todo o ciclo do projeto com metodologia ágil, garantindo prazos, transparência e resultados previsíveis.</p>
+        <ul class="service-features" aria-label="Inclui">
+          <li>Metodologia ágil (Scrum/Kanban)</li>
+          <li>Transparência e comunicação total</li>
+          <li>Acompanhamento em tempo real</li>
+          <li>Entregas incrementais e validadas</li>
+        </ul>
+        <a
+          href="https://wa.me/5511999999999?text=Olá!%20Tenho%20interesse%20em%20Gestão%20de%20Projetos."
+          class="service-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Fale conosco sobre Gestão de Projetos"
+        >
+          Fale conosco
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     DIFFERENTIALS
+============================== -->
+<section class="differentials" aria-labelledby="diff-title">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">Nossos diferenciais</div>
+    <h2 class="section-title" id="diff-title">Por que escolher a DEV4LAB?</h2>
+    <p class="section-subtitle">
+      Mais que uma empresa de tecnologia — somos parceiros no crescimento do seu laboratório.
+    </p>
+
+    <div class="diff-grid">
+
+      <div class="diff-item fade-up">
+        <div class="diff-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Especialização em myLIMS</h3>
+        <p>Foco total no myLIMS. Conhecemos a fundo cada módulo e funcionalidade.</p>
+      </div>
+
+      <div class="diff-item fade-up delay-1">
+        <div class="diff-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Time Experiente</h3>
+        <p>Consultores com +15 anos de experiência em sistemas de laboratório.</p>
+      </div>
+
+      <div class="diff-item fade-up delay-2">
+        <div class="diff-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h3>Entregas Rápidas</h3>
+        <p>Processos ágeis que reduzem o tempo de implementação sem abrir mão da qualidade.</p>
+      </div>
+
+      <div class="diff-item fade-up delay-3">
+        <div class="diff-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>Foco em Resultado</h3>
+        <p>Medimos o sucesso pelos seus resultados. Cada entrega gera valor real para a operação.</p>
+      </div>
+
+      <div class="diff-item fade-up delay-4">
+        <div class="diff-icon-wrap" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h3>Atendimento Próximo</h3>
+        <p>Suporte humanizado e ágil. Você sempre tem acesso direto ao especialista responsável.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     ABOUT
+============================== -->
+<section class="about" id="sobre" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-inner">
+
+      <!-- Visual -->
+      <div class="about-visual fade-up" aria-hidden="true">
+        <svg viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:380px;">
+          <!-- Background shape -->
+          <rect x="40" y="40" width="340" height="340" rx="40" fill="#F2F2F2"/>
+          <rect x="60" y="60" width="300" height="300" rx="28" fill="white"/>
+
+          <!-- Abstract lab illustration -->
+          <!-- Beaker -->
+          <path d="M160 140 v60 l-40 70 h120 l-40-70 v-60" fill="none" stroke="#1D1A3B" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M150 140 h60" stroke="#1D1A3B" stroke-width="3" stroke-linecap="round"/>
+          <!-- Liquid inside -->
+          <path d="M133 230 l-13 40 h120 l-13-40" fill="rgba(245,161,53,0.15)"/>
+          <path d="M133 230 l-13 40 h120 l-13-40" fill="none" stroke="rgba(245,161,53,0.5)" stroke-width="1.5"/>
+          <!-- Bubbles -->
+          <circle cx="175" cy="260" r="5" fill="#F5A135" opacity="0.4"/>
+          <circle cx="195" cy="250" r="3.5" fill="#F5A135" opacity="0.55"/>
+          <circle cx="185" cy="268" r="3" fill="#F5A135" opacity="0.3"/>
+
+          <!-- Data line chart top right -->
+          <rect x="250" y="100" width="110" height="72" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1.5"/>
+          <text x="262" y="120" fill="#1D1A3B" font-size="9" font-weight="700" opacity="0.5" font-family="Inter,sans-serif">ANÁLISES</text>
+          <polyline points="262,148 275,140 290,145 305,132 320,136 338,124" fill="none" stroke="#F5A135" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <polyline points="262,148 275,140 290,145 305,132 320,136 338,124" fill="url(#lineGrad)" opacity="0.15"/>
+
+          <!-- Status card bottom right -->
+          <rect x="250" y="200" width="110" height="60" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1.5"/>
+          <circle cx="274" cy="230" r="13" fill="rgba(37,211,102,0.12)"/>
+          <path d="M268 230l4 4 7-7" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="295" y="220" width="55" height="5" rx="2.5" fill="#1D1A3B" opacity="0.12"/>
+          <rect x="295" y="231" width="38" height="4" rx="2" fill="#25D366" opacity="0.4"/>
+          <rect x="295" y="241" width="46" height="4" rx="2" fill="#1D1A3B" opacity="0.08"/>
+
+          <!-- Corner accent -->
+          <circle cx="380" cy="380" r="60" fill="rgba(245,161,53,0.06)"/>
+          <circle cx="40" cy="40" r="40" fill="rgba(29,26,59,0.04)"/>
+
+          <defs>
+            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#F5A135"/>
+              <stop offset="100%" stop-color="#F5A135" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content">
+        <div class="section-label" aria-hidden="true">Sobre nós</div>
+        <h2 id="about-title">Nascemos para resolver um problema real</h2>
+        <p>
+          A DEV4LAB surgiu com um propósito claro: resolver um dos maiores desafios do mercado laboratorial — a falta de agilidade e expertise técnica na implementação e evolução do myLIMS.
+        </p>
+        <p>
+          Reunimos profissionais com décadas de experiência em sistemas de informação para laboratórios, criando um time altamente especializado que entende não só a tecnologia, mas também as exigências do setor.
+        </p>
+        <p>
+          Nosso modelo de trabalho é focado em entrega de valor real: projetos bem planejados, comunicação transparente e go-live dentro do prazo.
+        </p>
+        <blockquote class="about-highlight">
+          "A DEV4LAB nasceu com o propósito de resolver um dos maiores desafios do mercado: a falta de agilidade na implementação e evolução do myLIMS."
+        </blockquote>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     CTA SECTION
+============================== -->
+<section class="cta-section" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">Vamos começar</div>
+    <h2 class="cta-title" id="cta-title">
+      Pronto para <em>evoluir</em> seu laboratório?
+    </h2>
+    <p class="cta-desc">
+      Fale com um especialista DEV4LAB agora mesmo. Sem compromisso — apenas uma conversa para entender seus desafios e mostrar como podemos ajudar.
+    </p>
+    <div class="cta-actions">
+      <a
+        href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20evoluir%20meu%20laboratório%20com%20a%20DEV4LAB."
+        class="btn btn-whatsapp-lg"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar no WhatsApp com a DEV4LAB"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Falar no WhatsApp
+      </a>
+      <a href="#contato" class="btn btn-ghost">
+        Ou envie uma mensagem
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     CONTACT
+============================== -->
+<section class="contact" id="contato" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-inner">
+
+      <!-- Info -->
+      <div class="contact-info fade-up">
+        <div class="section-label" aria-hidden="true">Contato</div>
+        <h2 id="contact-title">Vamos conversar sobre o seu projeto</h2>
+        <p>
+          Preencha o formulário ou entre em contato diretamente pelo WhatsApp. Respondemos em até 2 horas durante o horário comercial.
+        </p>
+
+        <div class="contact-methods" role="list" aria-label="Formas de contato">
+
+          <a
+            href="https://wa.me/5511999999999"
+            class="contact-method"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="listitem"
+            aria-label="WhatsApp: (11) 99999-9999"
+          >
+            <div class="contact-method-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method-label">WhatsApp</div>
+              <div class="contact-method-value">(11) 99999-9999</div>
+            </div>
+          </a>
+
+          <a
+            href="mailto:contato@dev4lab.com.br"
+            class="contact-method"
+            role="listitem"
+            aria-label="E-mail: contato@dev4lab.com.br"
+          >
+            <div class="contact-method-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method-label">E-mail</div>
+              <div class="contact-method-value">contato@dev4lab.com.br</div>
+            </div>
+          </a>
+
+          <div class="contact-method" role="listitem" aria-label="Horário de atendimento">
+            <div class="contact-method-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Horário de atendimento</div>
+              <div class="contact-method-value">Seg–Sex, 8h às 18h</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form fade-up delay-1">
+        <h3 class="form-title">Envie uma mensagem</h3>
+
+        <div class="form-success" role="status" aria-live="polite" aria-atomic="true">
+          <div class="form-success-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h3>Mensagem enviada!</h3>
+          <p>Recebemos seu contato e responderemos em breve. Obrigado pelo interesse na DEV4LAB!</p>
+        </div>
+
+        <form id="contactForm" novalidate aria-label="Formulário de contato">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome <span aria-label="obrigatório">*</span></label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="form-control"
+                placeholder="Seu nome completo"
+                required
+                autocomplete="name"
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input
+                type="text"
+                id="empresa"
+                name="empresa"
+                class="form-control"
+                placeholder="Nome da empresa"
+                autocomplete="organization"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail <span aria-label="obrigatório">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="seu@email.com"
+              required
+              autocomplete="email"
+              aria-required="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem <span aria-label="obrigatório">*</span></label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              class="form-control"
+              placeholder="Descreva brevemente seu projeto ou dúvida..."
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form-submit" id="submitBtn">
+            Enviar mensagem
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">f
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="#inicio" class="logo" style="color:white;" aria-label="DEV4LAB — Página inicial">
+          <div class="logo-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="3" fill="#F5A135"/>
+              <path d="M10 2v3M10 15v3M2 10h3M15 10h3" stroke="#F5A135" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="10" cy="10" r="7" stroke="white" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <span class="logo-text">DEV<span>4</span>LAB</span>
+        </a>
+        <p>Especialistas em implementação, desenvolvimento e evolução do myLIMS. Aceleramos seu laboratório com agilidade e expertise técnica.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Implementação myLIMS</a></li>
+          <li><a href="#servicos">Relatórios Power BI</a></li>
+          <li><a href="#servicos">Gestão de Projetos</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; <span id="footerYear">2024</span> DEV4LAB. Todos os direitos reservados.
+      </p>
+      <div class="footer-socials" role="list" aria-label="Redes sociais">
+        <a
+          href="https://www.linkedin.com/company/dev4lab"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="LinkedIn da DEV4LAB"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a
+          href="https://instagram.com/dev4lab"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="Instagram da DEV4LAB"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a
+          href="https://wa.me/5511999999999"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="listitem"
+          aria-label="WhatsApp da DEV4LAB"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ==============================
+     WHATSAPP FLOAT BUTTON
+============================== -->
+<a
+  href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20DEV4LAB."
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar no WhatsApp com a DEV4LAB"
+>
+  <div class="whatsapp-float-btn">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </div>
+</a>
+
+
+<script src="script.js"></script>
+<script>
+  // Footer year
+  document.getElementById('footerYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
